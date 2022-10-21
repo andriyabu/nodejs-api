@@ -1,0 +1,17 @@
+N-Layers
+
+databases - a file which store all application data
+src - All sources code
+    - entities - Object Mappings
+    - factories - instance generators
+    - repositories - data access
+    - routes - endpoint Mappings
+    - services - communication between the routes and repositories layer (business logic)
+    - util - shared code
+    - handler - communication between routes and server
+    - index.js - server instance
+tests -> all automated test suites
+    - integration tests - testing on the user point of view. it's also an E2E test because there's no app consumming it
+
+    - unit tests
+        all tests that must run without any external connections such as dabases, external APIs and on our case, the fileSystem.
